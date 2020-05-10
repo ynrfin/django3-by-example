@@ -83,6 +83,15 @@ DATABASES = {
     }
 }
 
+# below is for mock up mail on console
+# uncomment for sending real email
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+email_host_USER = 'yourmail@gmail.com'
+EMAIL_HOST_PASSWORD = 'yourmailpassword'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
